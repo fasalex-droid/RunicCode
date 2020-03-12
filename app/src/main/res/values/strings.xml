@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">Индивидуальный рунический код</string>
 
-    <string name="Button">Изменить время</string>
+    <string name="Button">Указать</string>
     <string name="Button2">Изменить дату</string>
     <string name="TextView">TextView</string>
+
+    <string name="editView">Фамилия</string>
+    <string name="editView2">Имя</string>
+    <string name="editView3">Отчество</string>
+
 </resources>

@@ -1,5 +1,6 @@
 package com.example.runiccode;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -7,9 +8,11 @@ import android.os.Bundle;
 import android.text.format.DateUtils;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,8 +23,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        currentDateTime=(TextView)findViewById(R.id.currentDateTime);
+        currentDateTime= findViewById(R.id.currentDateTime);
         setInitialDateTime();
+
+
     }
 
     // отображаем диалоговое окно для выбора даты
@@ -43,10 +48,14 @@ public class MainActivity extends AppCompatActivity {
     // установка начальных даты и времени
     private void setInitialDateTime() {
 
-        currentDateTime.setText(DateUtils.formatDateTime(this,
-                dateAndTime.getTimeInMillis(),
-                DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_SHOW_YEAR
-                        | DateUtils.FORMAT_SHOW_TIME));
+        @SuppressLint("SimpleDateFormat")
+        SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+        String date = sdf.format(dateAndTime.getTime());
+        currentDateTime.setText(date);
+
+        //currentDateTime.setText(DateUtils.formatDateTime(this,
+        //        dateAndTime.getTimeInMillis(),
+        //        DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_SHOW_YEAR));
     }
 
     // установка обработчика выбора времени

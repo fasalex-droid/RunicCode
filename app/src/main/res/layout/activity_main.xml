@@ -7,30 +7,73 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/currentDateTime"
-        android:layout_width="337dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/TextView"
-        android:textSize="18sp" />
-
-    <Button
-        android:id="@+id/dateButton"
-        style="@android:style/Widget.Button.Small"
-        android:layout_width="123dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:onClick="setDate"
-        android:text="@string/Button2" />
-
-    <Button
-        android:id="@+id/timeButton"
-        style="@android:style/Widget.Button.Small"
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:onClick="setTime"
-        android:text="@string/Button" />
+        android:ems="10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:inputType="textPersonName"
+        android:text="@string/editView"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:inputType="textPersonName"
+        android:text="@string/editView2"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:inputType="textPersonName"
+        android:text="@string/editView3"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/currentDateTime"
+            android:layout_width="118dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/TextView"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/dateButton"
+            style="@android:style/Widget.Button.Small"
+            android:layout_width="123dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="setDate"
+            android:text="@string/Button2" />
+
+    </TableRow>
 
 </LinearLayout>
