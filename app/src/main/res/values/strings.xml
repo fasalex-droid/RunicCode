@@ -3,4 +3,5 @@
 
     <string name="Button">Изменить время</string>
     <string name="Button2">Изменить дату</string>
+    <string name="TextView">TextView</string>
 </resources>
