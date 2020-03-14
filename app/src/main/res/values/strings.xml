@@ -3,7 +3,21 @@
 
     <string name="Button">Указать</string>
     <string name="Button2">Изменить дату</string>
+    <string name="Button3">Узнать</string>
+
     <string name="TextView">TextView</string>
+    <string name="TextView2">Фамилия:</string>
+    <string name="TextView3">Имя:</string>
+    <string name="TextView4">Отчество:</string>
+    <string name="TextView5">Дата рождения:</string>
+    <string name="TextView9">Руна сущности</string>
+    <string name="TextView10">Руна личности</string>
+    <string name="TextView11">Золотая руна</string>
+
+    <string name="ImageView" />
+    <string name="ImageView2" />
+    <string name="ImageView3" />
+
 
     <string name="editView">Фамилия</string>
     <string name="editView2">Имя</string>
