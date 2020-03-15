@@ -144,9 +144,9 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_horizontal"
-        android:visibility="invisible">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -157,11 +157,11 @@
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="match_parent"
-                android:gravity="center_horizontal"
                 android:layout_height="128dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/algiz"
-                android:contentDescription="@string/ImageView" />
+                android:contentDescription="@string/ImageView"
+                android:gravity="center_horizontal"
+                android:src="@drawable/algiz" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -180,11 +180,11 @@
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="match_parent"
-                android:gravity="center_horizontal"
                 android:layout_height="128dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/fehu"
-                android:contentDescription="@string/ImageView2" />
+                android:contentDescription="@string/ImageView2"
+                android:gravity="center_horizontal"
+                android:src="@drawable/fehu" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -203,11 +203,11 @@
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="match_parent"
-                android:gravity="center_horizontal"
                 android:layout_height="128dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/dagaz"
-                android:contentDescription="@string/ImageView3" />
+                android:contentDescription="@string/ImageView3"
+                android:gravity="center_horizontal"
+                android:src="@drawable/dagaz" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -216,6 +216,7 @@
                 android:gravity="center_horizontal"
                 android:text="@string/TextView11" />
         </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>
